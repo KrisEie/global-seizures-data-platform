@@ -1,0 +1,195 @@
+/* QueryEditor.css - Updated with scenario support and improved styling */
+
+.query-editor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.query-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.query-section {
+    background-color: #fafafa;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+/* Sample queries styling */
+.sample-queries {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.query-item {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 13px;
+    border-left: 3px solid #ccc;
+    white-space: pre-wrap;
+    max-height: 100px;
+    overflow-y: auto;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+}
+
+.query-item:hover {
+    background-color: #e8e8e8;
+    border-left-color: #3498db;
+}
+
+/* Scenarios styling */
+.scenarios-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scenario-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.scenario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.scenario-header:hover {
+    background-color: #eee;
+}
+
+.scenario-header.active {
+    background-color: #e3f2fd;
+    border-bottom: 1px solid #bbdefb;
+}
+
+.scenario-header h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.toggle-icon {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.scenario-content {
+    padding: 16px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.scenario-description {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.scenario-queries {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Query input area */
+.query-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    height: 180px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    resize: vertical;
+    line-height: 1.4;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.query-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.execute-button {
+    padding: 10px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.execute-button:hover {
+    background-color: #2980b9;
+}
+
+.execute-button:disabled {
+    background-color: #b3d4e6;
+    cursor: not-allowed;
+}
+
+.shortcut-hint {
+    color: #777;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (min-width: 992px) {
+    .query-sections {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .query-section {
+        flex: 1;
+        min-width: 300px;
+    }
+}

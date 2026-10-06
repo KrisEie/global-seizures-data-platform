@@ -1,0 +1,9 @@
+node_modules
+build
+.git
+.env
+.env.*
+*.log
+dump
+neo4j_dump
+*.sql

@@ -1,0 +1,27 @@
+.connection-status {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.status-item {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.connected {
+    background-color: #d5f5e3;
+    color: #27ae60;
+}
+
+.disconnected {
+    background-color: #fadbd8;
+    color: #e74c3c;
+}

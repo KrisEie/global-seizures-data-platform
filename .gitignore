@@ -1,0 +1,36 @@
+# Local credentials (only the empty/example configuration belongs in Git)
+.env
+.env.*
+!.env.example
+# Dependencies, generated output and editor state
+node_modules/
+build/
+coverage/
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+# External source data and database exports
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.dump
+*.msi
+*.pdf
+*.sql
+/data/og_data/*
+!/data/og_data/README.md
+/data/split_sheets/
+/data/processed_data/
+/data/pg_db/
+/multi-db-query-tool/dump/
+/multi-db-query-tool/neo4j_dump/
+# Only the versioned schema/relationship scripts belong here.
+/data/neo4j_db/*
+!/data/neo4j_db/make_index.cql
+!/data/neo4j_db/set_relations.cql
